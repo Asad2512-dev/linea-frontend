@@ -116,14 +116,3 @@ Here is where each course requirement is explicitly demonstrated in the codebase
 - Implement a CSS-only dark mode using media state queries.
 - Add structural SVG inline backgrounds for the blueprint mockups.
 
----
-
-## License
-This project is licensed under the MIT License.
-
----
-
-## Author
-**J. Vance**  
-Portland State University - Advanced Web Development Assignment.
-# linea-frontend
