@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Linea | Context-Driven Architecture & Interior Design</title>
+    <meta name="description" content="Studio Linea is an independent Pacific Northwest architecture studio designing residential builds and urban workspaces that prioritize natural light and regional materials.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for premium typography hierarchy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Skip link for keyboard accessibility (Fulfills Step 4 Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header Navigation (Flexbox layout, Fulfills Semantic HTML & Nav) -->
+    <header class="site-header">
+        <div class="site-header-container">
+            <div class="site-header-brand-logo">
+                <a href="#" aria-label="Studio Linea Homepage">LINEA<span>.</span></a>
+            </div>
+            
+            <nav class="site-nav" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about" class="nav-link" aria-current="page">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#process" class="nav-link">Process</a></li>
+                    <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-button">Start a Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area with unique landmark ID -->
+    <main id="main-content" tabindex="-1">
+        
+        <!-- Hero Section (Flexbox & Relative-Absolute Positioning) -->
+        <section class="hero-section" aria-label="Welcome">
+            <div class="hero-wrapper">
+                <div class="hero-text-content">
+                    <h1 class="hero-title">We design spaces that feel raw yet refined.</h1>
+                    <p class="hero-description">We believe structural forms should frame views, capture shifting sunlight, and quietly simplify the daily rhythms of the people who move through them.</p>
+                    <div class="hero-button-group">
+                        <a href="#portfolio" class="btn btn-primary">View Our Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Book a Consultation</a>
+                    </div>
+                </div>
+                
+                <!-- Positioning Container (Relative/Absolute) -->
+                <div class="hero-graphic-container">
+                    <div class="hero-image-placeholder">
+                        <div class="grid-overlay"></div>
+                        <span class="image-label" aria-hidden="true">Form follows feeling</span>
+                    </div>
+                    <!-- Overlapping absolute stats element -->
+                    <div class="hero-badge" aria-label="Experience overview">
+                        <span class="badge-num">12+</span>
+                        <span class="badge-text">Years designing regional structures</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Semantic Layout & Aside landmark) -->
+        <section id="about" class="about-section" aria-labelledby="about-heading">
+            <div class="about-wrapper">
+                <div class="section-header">
+                    <span class="sub-title">Who We Are</span>
+                    <h2 id="about-heading">A small, focused team practicing responsive spatial planning.</h2>
+                </div>
+                <div class="about-grid-layout">
+                    <div class="about-content">
+                        <p>Established in Portland, Oregon, Studio Linea arose from a desire to move away from standardized, modular development. We design spaces that respond directly to their geographic coordinates—utilizing salvaged Douglas fir, local structural concrete mixes, and raw steel elements that weather over time.</p>
+                        <p>We work within a variety of contexts, from cabins in the Cascades to renovations governed by strict historic guidelines in Portland's older neighborhoods. We partner directly with local builders and woodworkers, ensuring that details are sketched, tested, and resolved collaboratively on-site.</p>
+                    </div>
+                    
+                    <!-- Aside used semantically for complementary material -->
+                    <aside class="about-aside-card" aria-labelledby="philosophy-title">
+                        <h3 id="philosophy-title">Our Values</h3>
+                        <ul>
+                            <li><strong>Material Honesty:</strong> We avoid synthetic finishes; wood, concrete, and metal should look like what they are.</li>
+                            <li><strong>Context First:</strong> We analyze slope, soil, and path of the sun before drawing the first line.</li>
+                            <li><strong>Lifespan:</strong> We detail joints and roofs to withstand decades of high Northwest rainfall.</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (CSS Grid) -->
+        <section id="services" class="services-section" aria-labelledby="services-heading">
+            <div class="services-wrapper">
+                <div class="section-header">
+                    <span class="sub-title">What We Do</span>
+                    <h2 id="services-heading">Core architectural capabilities</h2>
+                </div>
+                
+                <!-- Services CSS Grid -->
+                <div class="services-grid-layout">
+                    <article class="service-card">
+                        <div class="service-card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        </div>
+                        <h3 class="service-card-title">Residential Architecture</h3>
+                        <p class="service-card-description">Designing custom homes, micro-dwellings, and additions. We focus on natural cross-ventilation, daylighting, and layouts that adapt as family structures evolve.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        </div>
+                        <h3 class="service-card-title">Commercial & Workspace</h3>
+                        <p class="service-card-description">Workspaces configured for concentration and collaboration. We replace conventional drywall layouts with glass, structural timber, and shared lightwells.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.5 7.5"></path><path d="M14 11l-2.5-2.5"></path></svg>
+                        </div>
+                        <h3 class="service-card-title">Interior Detailing</h3>
+                        <p class="service-card-description">Custom millwork drawings, built-in shelving, cabinetry, and fixtures. We design furniture as permanent architectural elements integrated into the building frame.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section (Asymmetric CSS Grid with Absolute Tags) -->
+        <section id="portfolio" class="portfolio-section" aria-labelledby="portfolio-heading">
+            <div class="portfolio-wrapper">
+                <div class="section-header">
+                    <span class="sub-title">Portfolio</span>
+                    <h2 id="portfolio-heading">Selected projects</h2>
+                </div>
+                
+                <!-- Gallery layout using CSS Grid -->
+                <div class="portfolio-grid-layout">
+                    <article class="portfolio-card portfolio-card-featured">
+                        <div class="portfolio-image-box prj-1">
+                            <span class="portfolio-card-badge">AIA Northwest Winner 2024</span>
+                        </div>
+                        <div class="portfolio-card-content">
+                            <div>
+                                <h3 class="portfolio-card-title">The Concrete Ravine House</h3>
+                                <p class="portfolio-card-category">Residential Build / 2023</p>
+                            </div>
+                            <span class="portfolio-card-arrow" aria-hidden="true">&rarr;</span>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <div class="portfolio-image-box prj-2"></div>
+                        <div class="portfolio-card-content">
+                            <div>
+                                <h3 class="portfolio-card-title">Kettle & Steam Café</h3>
+                                <p class="portfolio-card-category">Commercial Retail / 2022</p>
+                            </div>
+                            <span class="portfolio-card-arrow" aria-hidden="true">&rarr;</span>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <div class="portfolio-image-box prj-3"></div>
+                        <div class="portfolio-card-content">
+                            <div>
+                                <h3 class="portfolio-card-title">Cascade Foothills Cabin</h3>
+                                <p class="portfolio-card-category">Off-Grid Residential / 2024</p>
+                            </div>
+                            <span class="portfolio-card-arrow" aria-hidden="true">&rarr;</span>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card portfolio-card-featured">
+                        <div class="portfolio-image-box prj-4"></div>
+                        <div class="portfolio-card-content">
+                            <div>
+                                <h3 class="portfolio-card-title">Broad & Pine Workspace</h3>
+                                <p class="portfolio-card-category">Commercial Refurbishment / 2023</p>
+                            </div>
+                            <span class="portfolio-card-arrow" aria-hidden="true">&rarr;</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process-section" aria-labelledby="process-heading">
+            <div class="process-wrapper">
+                <div class="process-grid-layout">
+                    <div class="process-text-content">
+                        <span class="sub-title">Our Process</span>
+                        <h2 id="process-heading">How we bridge the gap between design and delivery.</h2>
+                        <p>We do not produce drawing sets only to hand them off to builders we've never met. Our team spends significant time on site to resolve details collaboratively, minimizing errors during construction phases.</p>
+                        
+                        <ol class="process-steps-list">
+                            <li class="process-step-item">
+                                <span class="process-step-number" aria-hidden="true">01</span>
+                                <div>
+                                    <h4 class="process-step-heading">Open-Book Estimates</h4>
+                                    <p class="process-step-body">Detailed transparent cost reviews. We track labor costs, supplier bids, and contingencies directly to ensure project feasibility.</p>
+                                </div>
+                            </li>
+                            <li class="process-step-item">
+                                <span class="process-step-number" aria-hidden="true">02</span>
+                                <div>
+                                    <h4 class="process-step-heading">Physical Scale Modeling</h4>
+                                    <p class="process-step-body">Before finalizing architectural drawings, we build physical mockups to review how direct sunlight hits materials.</p>
+                                </div>
+                            </li>
+                            <li class="process-step-item">
+                                <span class="process-step-number" aria-hidden="true">03</span>
+                                <div>
+                                    <h4 class="process-step-heading">On-Site Joint Resolution</h4>
+                                    <p class="process-step-body">Our team drafts construction details alongside frame carpenters and stone masons directly at the job site.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="process-graphic-box" aria-hidden="true">
+                        <div class="visual-placeholder">
+                            <div class="blueprint-lines"></div>
+                            <span class="visual-caption">1:20 Joint Spec Sheet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section (Layout grid) -->
+        <section class="stats-section" aria-label="Key Figures">
+            <div class="stats-wrapper">
+                <div class="stats-grid-layout">
+                    <div class="stat-card">
+                        <p class="stat-number">100%</p>
+                        <p class="stat-label">On-site construction supervision</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-number">12</p>
+                        <p class="stat-label">Design awards in six years</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-number">03</p>
+                        <p class="stat-label">Active licensed architects</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-number">65+</p>
+                        <p class="stat-label">Completed structural builds</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section (Flexbox layout) -->
+        <section id="reviews" class="reviews-section" aria-labelledby="reviews-heading">
+            <div class="reviews-wrapper">
+                <div class="section-header">
+                    <span class="sub-title">Client Stories</span>
+                    <h2 id="reviews-heading">Collaborative relationships</h2>
+                </div>
+                
+                <div class="reviews-flex-layout">
+                    <blockquote class="review-card">
+                        <p class="review-quote">"Studio Linea redesigned our warehouse conversion. They figured out a way to get light into the middle of the floor plan where three other architects said it wasn't possible. Truly exceptional team."</p>
+                        <cite class="review-author-citation">
+                            <strong class="review-author-name">Marcus & Elena Vance</strong>
+                            <span class="review-author-meta">Eastside Industrial District Loft</span>
+                        </cite>
+                    </blockquote>
+
+                    <blockquote class="review-card">
+                        <p class="review-quote">"They stayed on site almost daily once the structural framing started. Their attention to minor alignments, window framing, and custom cabinet joints saved us thousands in potential builder errors."</p>
+                        <cite class="review-author-citation">
+                            <strong class="review-author-name">Sarah Jenkins</strong>
+                            <span class="review-author-meta">Cascade Cabin Project</span>
+                        </cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (Semantic accordion using details/summary) -->
+        <section id="faq" class="faq-section" aria-labelledby="faq-heading">
+            <div class="faq-wrapper">
+                <div class="section-header">
+                    <span class="sub-title">Got Questions?</span>
+                    <h2 id="faq-heading">Frequently Asked Questions</h2>
+                </div>
+                
+                <div class="faq-accordion-group">
+                    <details class="faq-accordion-item">
+                        <summary class="faq-question-trigger">Do you supervise construction on all projects?</summary>
+                        <div class="faq-answer-panel">
+                            <p>Yes. We do not offer design-only services where we hand off blueprints. To maintain quality control, we manage all projects from early sketches to final builder walk-throughs.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-accordion-item">
+                        <summary class="faq-question-trigger">How do you calculate your project fees?</summary>
+                        <div class="faq-answer-panel">
+                            <p>We work on a fixed-fee scale tied to milestones rather than taking percentage commissions on construction costs. This aligns our interests with keeping your build budget in check.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-accordion-item">
+                        <summary class="faq-question-trigger">Can you work with historic or heritage buildings?</summary>
+                        <div class="faq-answer-panel">
+                            <p>Absolutely. Over half of our urban portfolio consists of renovations within historic districts. We specialize in blending contemporary concrete and steel with heritage brickwork.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Form and details layout) -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+            <div class="contact-wrapper">
+                <div class="contact-grid-layout">
+                    <div class="contact-text-content">
+                        <h2 id="contact-heading">Let's build something lasting.</h2>
+                        <p>Have a site or a renovation project in mind? We'd love to chat. Drop us a message or schedule a visit to our Portland design studio.</p>
+                        
+                        <address class="contact-channels-list">
+                            <p class="contact-channel-item"><strong>Studio Address:</strong> 1482 Pine Street, Studio 4B, Portland, OR</p>
+                            <p class="contact-channel-item"><strong>Email Address:</strong> projects@studiolinea.com</p>
+                            <p class="contact-channel-item"><strong>Telephone:</strong> (503) 555-0182</p>
+                        </address>
+                    </div>
+                    
+                    <form class="contact-form-card" action="#" method="POST" onsubmit="event.preventDefault(); alert('Form submitted! (Demo only)');">
+                        <div class="contact-form-row">
+                            <div class="contact-form-field">
+                                <label for="name" class="contact-form-label">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Marcus Vance" autocomplete="name" class="contact-form-input">
+                            </div>
+                            <div class="contact-form-field">
+                                <label for="email" class="contact-form-label">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="marcus@example.com" autocomplete="email" class="contact-form-input">
+                            </div>
+                        </div>
+                        <div class="contact-form-field">
+                            <label for="project-type" class="contact-form-label">Project Type</label>
+                            <select id="project-type" name="project-type" class="contact-form-select">
+                                <option value="residential">Residential Build</option>
+                                <option value="commercial">Commercial / Workspace</option>
+                                <option value="renovation">Renovation / Addition</option>
+                            </select>
+                        </div>
+                        <div class="contact-form-field">
+                            <label for="message" class="contact-form-label">Project Description</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your site, budget, and structural ideas..." class="contact-form-textarea"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section (Footer columns with navigation links) -->
+    <footer class="site-footer">
+        <div class="site-footer-container">
+            <div class="site-footer-brand-box">
+                <a href="#" class="site-footer-brand-logo" aria-label="Studio Linea Homepage">LINEA<span>.</span></a>
+                <p class="site-footer-brand-description">A collaborative architecture studio crafting minimal, context-driven spaces.</p>
+            </div>
+            
+            <div class="site-footer-columns-group">
+                <div class="site-footer-column">
+                    <h4 class="site-footer-column-title">Navigation</h4>
+                    <ul class="site-footer-links-list">
+                        <li><a href="#about" class="site-footer-link">About Us</a></li>
+                        <li><a href="#services" class="site-footer-link">Services</a></li>
+                        <li><a href="#portfolio" class="site-footer-link">Selected Work</a></li>
+                        <li><a href="#contact" class="site-footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="site-footer-column">
+                    <h4 class="site-footer-column-title">Socials</h4>
+                    <ul class="site-footer-links-list">
+                        <li><a href="#" class="site-footer-link">Instagram</a></li>
+                        <li><a href="#" class="site-footer-link">Pinterest</a></li>
+                        <li><a href="#" class="site-footer-link">LinkedIn</a></li>
+                        <li><a href="#" class="site-footer-link">Journal</a></li>
+                    </ul>
+                </div>
+
+                <div class="site-footer-column">
+                    <h4 class="site-footer-column-title">Studio Hours</h4>
+                    <p>Monday - Friday<br>09:00 AM - 05:00 PM PST</p>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer-bottom-bar">
+            <p class="site-footer-copyright">&copy; 2026 Studio Linea. Built for student portfolio demo purposes. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
